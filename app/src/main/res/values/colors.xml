@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F0F0F0</color> <!-- Abu-abu terang -->
+    <color name="text_color_primary">#FFFFFF</color> <!-- Hitam -->
+    <color name="button_color">#2196F3</color> <!-- Biru -->
+    <color name="text_color_secondary">#808080</color> <!-- Abu-abu -->
+    <color name="accent_color">#FF5722</color> <!-- Oranye -->
+</resources>

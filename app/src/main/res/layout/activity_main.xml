@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#2EB3FB"
+    tools:context=".MainActivity">
+
+    <!-- Kredit Penulis -->
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="by Hirawati Baruadi"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Input Lokasi -->
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Lokasi"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintTop_toBottomOf="@id/credit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Dapatkan Cuaca -->
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info Cuaca"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/locationInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Hasil Cuaca -->
+    <TextView
+        android:id="@+id/weatherResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:paddingTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/getWeatherButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Suhu -->
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="29sp"
+        android:paddingTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/weatherResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ikon Cuaca -->
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/weather"
+        app:layout_constraintTop_toBottomOf="@id/temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Deskripsi Cuaca -->
+    <TextView
+        android:id="@+id/weatherDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/weatherIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
